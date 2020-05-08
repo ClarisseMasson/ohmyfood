@@ -1,0 +1,252 @@
+﻿* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+height: 100%;
+}
+
+h2 {
+    font-size: 2.2em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #ffce44;
+}
+
+header {
+    display: flex;
+    background-color: #579c87;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+header img{
+    width: 15%;
+    margin: 1%;
+ }
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+}
+article {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+section {
+    display:flex;
+    flex-direction:column;
+    width: 48%;
+    margin: 2% 1% 0% 0%;
+    height: 320px;
+    text-align: center;
+    justify-content: center;
+}
+
+#menu__note {
+    background-color: #fcdfdb;
+    color: #3b1419;
+    box-shadow: 0em 0em 0.5em 0em rgba(0, 0, 0, 0.35);
+}
+
+#menu__note i {
+    font-size: 3.5em;
+    margin-bottom: 0.2em;
+    background: linear-gradient(to right, #f15961 50%, #f8a184 55%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#menu__note h2 {
+    font-family: 'Segoe Print';
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: -0.05em;
+    line-height: 0.9em;
+
+}
+
+#menu__note h3 {
+    font-family: 'Devonshire', cursive;
+    font-weight: 400;
+    font-size: 2.5em;
+    letter-spacing:0.01em;
+
+}
+
+#menu__chic {
+    background-color: #fef5f9;
+    box-shadow: 0em 0em 0.5em 0em rgba(0, 0, 0, 0.35);
+}
+
+#menu__chic h2 {
+    color: #c77529;
+    font-family: 'Times New Roman';
+    font-weight: bolder;
+    line-height: 1.5em;
+}
+
+#menu__chic h3 {
+    background: linear-gradient(45deg, #c77529 30%, #b67094 40%, #7762ab 80% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Gabriela', serif;
+}
+
+#menu__papilles {
+    background-color: #f8f9fa;
+    box-shadow: 0em 0em 0.5em 0em rgba(0, 0, 0, 0.35);
+}
+
+#menu__papilles h2 {
+    color: #437ec1;
+    font-family: 'Segoe Print';
+    line-height: 0.9em;
+    line-height: 1.5em;
+}
+
+#menu__papilles h3 {
+    background: linear-gradient(45deg, #3951a3 30%, #437ec1 80% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Great Vibes', cursive;
+    font-size:2.5em;
+    letter-spacing:0.07em;
+}
+
+#menu__palette {
+    background-color: white;
+    box-shadow: 0em 0em 0.5em 0em rgba(0, 0, 0, 0.35);
+}
+
+#menu__palette h2 {
+    color: #73c058;
+    font-family: 'Segoe Print';
+    line-height: 0.9em;
+    line-height: 1.5em;
+}
+
+#menu__palette h3 {
+    background: linear-gradient(45deg, #3c9444 30%, #c2db77 80% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Kaushan Script', cursive;
+    letter-spacing: 0.07em;
+}
+
+#prochainement {
+    background-color: #579c87;
+    border-radius: 0.35em;
+    width: 20%;
+    margin: 1%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.8em;
+    letter-spacing: 0.1em;
+    color: #ffce44;
+    padding: 0.5em;
+    text-align: center;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    height: 5em;
+    width: 100%;
+    background-color: #579c87;
+}
+
+#annexe {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media screen and (min-width: 767px) and (max-width : 1279px) {
+
+    article, #annexe{
+        width: 90%;
+    }
+
+    header img{
+        width: 40%;
+        margin: 3%;
+    }
+
+    section {
+        width: 47%;
+        height: 450px;
+        font-size: 0.85em;
+        margin-top: 4%;
+    }
+
+    #prochainement{
+        width: 60%;
+        margin: 1em;
+    }
+
+
+ }
+
+@media screen and (max-width: 767px) {
+    article, #annexe {
+        width: 90%;
+    }
+
+    header img {
+        width: 70%;
+        margin: 5%;
+    }
+
+    section {
+        width: 100%;
+        margin-top: 8%;
+        height: 450px;
+        font-size: 0.85em;
+    }
+
+    #prochainement {
+        width: 70%;
+        margin-top: 8%;
+        margin-bottom:2em;
+        font-size: 1.5em;
+    }
+
+    footer{
+        height: 7em;
+        align-items:center;
+    }
+
+    #annexe{
+        flex-direction: column;
+        justify-content: space-between;
+        height:70%;
+    }
+
+}
+
+
