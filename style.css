@@ -188,7 +188,7 @@ footer {
 }
 
 
-@media screen and (min-width: 767px) and (max-width : 1279px) {
+@media screen and (min-width: 767px) and (max-width : 1367px) {
 
     article, #annexe{
         width: 90%;
@@ -201,14 +201,19 @@ footer {
 
     section {
         width: 47%;
-        height: 450px;
+        height: 550px;
         font-size: 0.85em;
         margin-top: 4%;
     }
 
     #prochainement{
-        width: 60%;
+        width: 45%;
         margin: 1em;
+        margin-bottom: 2em;
+    }
+
+    footer {
+        height: 6em;
     }
 
 
