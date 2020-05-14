@@ -6,9 +6,6 @@
     box-sizing: border-box;
 }
 
-html {
-height: 100%;
-}
 
 h2 {
     font-size: 2.2em;
@@ -16,15 +13,6 @@ h2 {
 
 h3 {
     font-size: 2em;
-}
-
-a {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    font-size: 1.5em;
-    text-decoration: none;
-    letter-spacing: 0.1em;
-    color: #ffce44;
 }
 
 header {
@@ -44,25 +32,25 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 80px;
 }
 article {
     display: flex;
     flex-wrap: wrap;
-    width: 60%;
+    width: 50%;
     justify-content: space-between;
     align-content: space-between;
 }
 
-section {
-    display:flex;
-    flex-direction:column;
-    width: 48%;
-    margin: 2% 1% 0% 0%;
-    height: 320px;
-    text-align: center;
-    justify-content: center;
-}
+article a {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        width: 47%;
+        margin-top: 3em;
+        height: 700px;
+        text-align: center;
+        justify-content: center;
+    }
 
 #menu__note {
     background-color: #fcdfdb;
@@ -159,7 +147,7 @@ section {
     background-color: #579c87;
     border-radius: 0.35em;
     width: 20%;
-    margin: 1%;
+    margin: 2em 0em 4em;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     font-size: 1.8em;
@@ -167,6 +155,15 @@ section {
     color: #ffce44;
     padding: 0.5em;
     text-align: center;
+}
+
+footer a{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #ffce44;
 }
 
 
@@ -188,8 +185,9 @@ footer {
 }
 
 
-@media screen and (min-width: 767px) and (max-width : 1367px) {
 
+
+@media screen and (min-width: 767px) and (max-width : 1367px) {
     article, #annexe{
         width: 90%;
     }
@@ -199,7 +197,7 @@ footer {
         margin: 3%;
     }
 
-    section {
+    article a {
         width: 47%;
         height: 550px;
         font-size: 0.85em;
@@ -209,7 +207,7 @@ footer {
     #prochainement{
         width: 45%;
         margin: 1em;
-        margin-bottom: 2em;
+        margin-bottom: 4em;
     }
 
     footer {
@@ -229,7 +227,7 @@ footer {
         margin: 5%;
     }
 
-    section {
+    article a {
         width: 100%;
         margin-top: 8%;
         height: 450px;
@@ -239,9 +237,10 @@ footer {
     #prochainement {
         width: 70%;
         margin-top: 8%;
-        margin-bottom:1em;
+        margin-bottom:4.5em;
         font-size: 1.5em;
     }
+
 
     footer{
         font-size: 0.85em;

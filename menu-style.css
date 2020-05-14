@@ -1,0 +1,254 @@
+﻿/*
+    +---------------------+
+    | MENU Note_Enchantée |
+    +---------------------+
+*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: normal;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8em;
+    text-align: center;
+    line-height: 1.3em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+header {
+    display: flex;
+    background-color: #579c87;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+header img {
+    width: 15%;
+    margin: 1%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-between;
+    align-items:center;
+    box-shadow: 0em 0em 0.5em 0em rgba(0, 0, 0, 0.35);
+    margin-top: 3em;
+    margin-bottom: 8em;
+    padding:5em 7em 5em 7em;
+}
+
+section {
+    margin-bottom: 8%;
+}
+
+#menu__note h1 {
+    font-family: 'Devonshire', cursive;
+    letter-spacing: 0.01em;
+}
+
+#menu__note {
+    background-color: #fcdfdb;
+    color: #3b1419;
+    font-family: 'Segoe Print';
+}
+
+#menu__note-titre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu__note-titre i {
+    font-size: 5em;
+    background: linear-gradient(to right, #f15961 25%, #f8a184 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu__partie-titre {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 1.8em;
+}
+
+.menu__partie-titre img {
+    width:30%;
+    height:100%;
+}
+
+.menu__partie-description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 1.1em;
+    margin-top:0.5em;
+}
+
+.prix {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+#menu__note-signature {
+    display: flex;
+    font-family: 'Devonshire', cursive;
+    font-size: 3em;
+}
+
+#menu__note-signature i{
+    font-size: 1.2em;
+    margin-right: 0.5em;
+    background: linear-gradient(to right, #f15961 25%, #f8a184 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+
+
+
+footer a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #ffce44;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    height: 5em;
+    width: 100%;
+    background-color: #579c87;
+}
+
+#annexe {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media screen and (min-width: 767px) and (max-width : 1367px) {
+    article, #annexe {
+        width: 90%;
+    }
+
+    article {
+        padding: 3em 4em 3em 4em;
+    }
+
+    header img {
+        width: 40%;
+        margin: 3%;
+    }
+
+    h1, h2 {
+        text-align:center;
+
+    }
+
+    article a {
+        width: 47%;
+        height: 550px;
+        font-size: 0.85em;
+        margin-top: 4%;
+    }
+
+    footer {
+        height: 6em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    article, #annexe {
+        width: 90%;
+    }
+
+    article {
+        padding: 2em 2em 2em 2em;
+    }
+
+
+    header img {
+        width: 70%;
+        margin: 5%;
+    }
+
+    h1 {
+    line-height: 0.8em;
+    }
+
+    h2 {
+        line-height: 1.3em;
+    }
+  
+    #menu__note-titre i {
+        font-size: 3.8em;
+        margin-bottom:0.2em;
+    }
+
+    #menu__note-titre {
+         margin-bottom: 2em;
+    }
+
+    .menu__partie-description {
+        margin-bottom: 10%;
+    }
+
+    #menu__note-signature {
+        font-size: 2em;
+    }
+
+    .menu__partie-titre img {
+        width: 15%;
+    }
+
+    footer {
+        font-size: 0.85em;
+        height: 6em;
+        align-items: center;
+    }
+
+    #annexe {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #menu__note-signature i {
+        font-size: 1em;
+        
+    }
+}
