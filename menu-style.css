@@ -1,7 +1,7 @@
 ﻿/*
-    +---------------------+
-    | MENU Note_Enchantée |
-    +---------------------+
+    +-------------------+
+    | MENU_grand_commun |
+    +-------------------+
 */
 
 * {
@@ -17,7 +17,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.8em;
+    font-size: 1.6em;
     text-align: center;
     line-height: 1.3em;
 }
@@ -25,6 +25,12 @@ h2 {
 h3 {
     font-size: 2em;
 }
+
+/*
+    +-------------------------+
+    | Bandeau_fixe_bas_commun |
+    +-------------------------+
+*/
 
 header {
     display: flex;
@@ -38,6 +44,13 @@ header img {
     width: 15%;
     margin: 1%;
 }
+
+
+/*
+    +-----------------------+
+    | Structure_menu_commun |
+    +-----------------------+
+*/
 
 main {
     display: flex;
@@ -54,36 +67,13 @@ article {
     box-shadow: 0em 0em 0.5em 0em rgba(0, 0, 0, 0.35);
     margin-top: 3em;
     margin-bottom: 8em;
-    padding:5em 7em 5em 7em;
+    padding:5em 4em 5em 4em;
 }
 
 section {
     margin-bottom: 8%;
 }
 
-#menu__note h1 {
-    font-family: 'Devonshire', cursive;
-    letter-spacing: 0.01em;
-}
-
-#menu__note {
-    background-color: #fcdfdb;
-    color: #3b1419;
-    font-family: 'Segoe Print';
-}
-
-#menu__note-titre {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#menu__note-titre i {
-    font-size: 5em;
-    background: linear-gradient(to right, #f15961 25%, #f8a184 60%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 
 .menu__partie-titre {
     display: flex;
@@ -93,7 +83,7 @@ section {
 }
 
 .menu__partie-titre img {
-    width:30%;
+    width:28%;
     height:100%;
 }
 
@@ -102,13 +92,69 @@ section {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
-    font-size: 1.1em;
-    margin-top:0.5em;
+    font-size: 1.3em;
+    line-height: 2.2em;
+    margin-top: 0.2em;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .prix {
-    font-size: 1.3em;
+    font-size: 1.4em;
+}
+
+
+/*
+    +---------------------+
+    | Specifite_menu_NOTE |
+    +---------------------+
+*/
+
+#menu__note {
+    background-color: #fcdfdb;
+    color: #3b1419;
+    font-family: 'Segoe Print';
+}
+
+#menu__note h1 {
+    font-family: 'Devonshire', cursive;
+    letter-spacing: 0.01em;
+}
+
+#menu__note  {
+    padding: 5em 6em 5em 6em;
+}
+
+#menu__note .menu__partie-description {
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+
+#menu__note-titre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#menu__note-titre i {
+    font-size: 5em;
+    line-height:1.1em;
+    background: linear-gradient(to right, #f15961 25%, #f8a184 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#menu__note .prix {
     font-weight: bold;
+}
+
+
+#menu__note .menu__partie-description {
+    font-size: 1.1em;
+    letter-spacing: -0.02em;
 }
 
 #menu__note-signature {
@@ -126,10 +172,139 @@ section {
 }
 
 
+/*
+    +---------------------+
+    | Specifite_menu_CHIC |
+    +---------------------+
+*/
+
+#menu__chic {
+    background-color: #fef5f9;
+    color: black;
+    font-family: 'Times New Roman';
+}
 
 
+#menu__chic h1 {
+    background: linear-gradient(45deg, #c77529 30%, #b67094 40%, #7762ab 80% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'DM Serif Text', serif;
+    margin-top: 8%;
+    margin-bottom: 16%;
+}
 
 
+#menu__chic img:nth-of-type(2) {
+    transform: scaleX(-1);
+}
+
+
+#menu__chic .menu__partie:first-of-type {
+    /*color: #c77529;*/
+    filter: invert(45%) sepia(100%) saturate(405%) hue-rotate(348deg) brightness(93%) contrast(84%);
+}
+
+#menu__chic .menu__partie:nth-of-type(2) {
+    /*color: #b67094;*/
+    filter: invert(49%) sepia(14%) saturate(1297%) hue-rotate(276deg) brightness(102%) contrast(79%);
+}
+
+#menu__chic .menu__partie:nth-of-type(3) {
+    /*color: #7762ab;*/
+    filter: invert(43%) sepia(8%) saturate(2840%) hue-rotate(216deg) brightness(95%) contrast(90%);
+    margin-bottom:16%;
+}
+
+
+/*
+    +-------------------------+
+    | Specifite_menu_PAPILLES |
+    +-------------------------+
+*/
+
+#menu__papilles {
+    background-color: #f8f9fa;
+    color: black;
+    font-family: 'Segoe Print';
+    letter-spacing:-0.08em;
+}
+
+
+#menu__papilles h1 {
+    background: linear-gradient(45deg, #3951a3 30%, #437ec1 80% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Great Vibes', cursive;
+    font-size: 5.5em;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    margin-top: 8%;
+    margin-bottom: 16%;
+}
+
+#menu__papilles h2 {
+    font-weight: normal;
+}
+
+
+#menu__papilles img:nth-of-type(2) {
+    transform: scaleX(-1);
+}
+
+#menu__papilles .menu__partie:first-of-type img {
+    /*color: #c77529;*/
+    filter: invert(31%) sepia(15%) saturate(2852%) hue-rotate(191deg) brightness(95%) contrast(94%);
+}
+
+#menu__papilles .menu__partie:nth-of-type(2) img {
+    /*color: #437ec1;*/
+    filter: invert(43%) sepia(97%) saturate(344%) hue-rotate(171deg) brightness(90%) contrast(89%);
+}
+
+/*les images qui sont dans la 3eme partie du menu papilles*/
+#menu__papilles .menu__partie:nth-of-type(3) img {
+    /*color: #229df9;*/
+    filter: invert(65%) sepia(80%) saturate(4556%) hue-rotate(182deg) brightness(100%) contrast(96%);
+}
+
+/*
+    +------------------------+
+    | Specifite_menu_PALETTE |
+    +------------------------+
+*/
+
+#menu__palette {
+    background-color: #fdfffd;
+    color: black;
+    font-family: 'Segoe Print';
+    letter-spacing: -0.1em;
+}
+#menu__palette h1 {
+    background: linear-gradient(45deg, #3c9444 30%, #c2db77 80% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 4.8em;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    margin-top: 8%;
+    margin-bottom: 16%;
+}
+
+#menu__palette h2 {
+    font-weight: normal;
+}
+
+#menu__palette .trait:first-child {
+    transform: scaleX(-1);
+}
+
+/*
+    +-------------------------+
+    | Bandeau_fixe_bas_commun |
+    +-------------------------+
+*/
 
 
 footer a {
@@ -159,6 +334,12 @@ footer {
     align-items: center;
 }
 
+
+/*
+    +--------------------+
+    | Responsive_tablette|
+    +--------------------+
+*/
 
 @media screen and (min-width: 767px) and (max-width : 1367px) {
     article, #annexe {
@@ -191,6 +372,14 @@ footer {
     }
 }
 
+
+
+/*
+    +------------------+
+    | Responsive_Mobile|
+    +------------------+
+*/
+
 @media screen and (max-width: 767px) {
 
     article, #annexe {
@@ -208,32 +397,30 @@ footer {
     }
 
     h1 {
-    line-height: 0.8em;
+        font-size: 2.5em;
+        line-height: 0.9em;
     }
 
     h2 {
         line-height: 1.3em;
     }
-  
-    #menu__note-titre i {
-        font-size: 3.8em;
-        margin-bottom:0.2em;
+
+    .menu__partie-titre img {
+        width: 18%;
+        height: 0.25em;
     }
 
-    #menu__note-titre {
-         margin-bottom: 2em;
-    }
 
     .menu__partie-description {
         margin-bottom: 10%;
+        margin-left: 0%;
+        margin-right: 0%;
+        line-height: 1.5em;
     }
 
-    #menu__note-signature {
-        font-size: 2em;
-    }
 
-    .menu__partie-titre img {
-        width: 15%;
+    .prix {
+        margin-top: 0.25em;
     }
 
     footer {
@@ -247,8 +434,53 @@ footer {
         justify-content: space-between;
     }
 
-    #menu__note-signature i {
-        font-size: 1em;
-        
+    /*
+    +---------------------------+
+    | Adaptation specifique_NOTE|
+    +---------------------------+
+*/
+
+    #menu__note-titre i {
+        font-size: 3.8em;
+        margin-bottom: 0.2em;
     }
+
+    #menu__note-titre {
+        margin-bottom: 2em;
+    }
+
+    #menu__note .menu__partie-description {
+        line-height: 1.9em;
+    }
+
+    #menu__note-signature {
+        font-size: 2em;
+    }
+
+        #menu__note-signature i {
+            font-size: 1em;
+        }
+
+    /*
+    +-------------------------------+
+    | Adaptation specifique_PAPILLES|
+    +-------------------------------+
+*/
+
+    #menu__papilles h1 {
+        font-size: 4em;
+        line-height: 1.25em;
+    }
+
+    /*
+    +------------------------------+
+    | Adaptation specifique_PALETTE|
+    +------------------------------+
+*/
+
+    #menu__palette h1 {
+        font-size: 3em;
+        line-height: 1.25em;
+    }
+
 }

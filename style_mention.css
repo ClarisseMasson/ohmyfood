@@ -1,0 +1,157 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+h1 {
+    font-size:2.6em;
+    font-weight:900;
+    margin-bottom:0.2em;
+
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 0.1em;
+    text-transform:uppercase;
+}
+
+p {
+    font-size: 1.3em;
+    font-weight:lighter;
+    text-align: left;
+}
+
+header {
+    display: flex;
+    background-color: #579c87;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+header img {
+    width: 15%;
+    margin: 1%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    background-color: #fdfffd;
+    justify-content: space-between;
+    align-content: space-between;
+    margin: 2%;
+    margin-bottom:6%;
+    padding:2em;
+    box-shadow: 0em 0em 0.5em 0em rgba(0, 0, 0, 0.35);
+}
+
+section {
+    margin-bottom:1.8em;
+    width:100%;
+}
+
+article img {
+    width:18%;
+}
+
+article a {
+    color: #579c87;
+}
+
+
+footer a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #ffce44;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    height: 5em;
+    width: 100%;
+    background-color: #579c87;
+}
+
+#annexe {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+@media screen and (min-width: 767px) and (max-width : 1367px) {
+    article {
+        width: 90%;
+        margin-top: 3%;
+        margin-bottom: 12%;
+    }
+
+    #annexe {
+        width: 90%;
+    }
+
+    header img {
+    width: 40%;
+    margin: 3%;
+    }
+
+    footer {
+        height: 6em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    article {
+        width: 90%;
+        margin-top:6%;
+        margin-bottom: 28%;
+        padding:1em;
+    }
+
+    #annexe {
+        width: 90%;
+    }
+    
+    article img {
+        width: 60%;
+    }
+
+
+    header img {
+        width: 70%;
+        margin: 5%;
+    }
+
+
+    footer {
+        font-size: 0.85em;
+        height: 6em;
+        align-items: center;
+    }
+
+    #annexe {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 70%;
+    }
+}
