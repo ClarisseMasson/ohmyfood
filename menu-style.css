@@ -386,7 +386,7 @@ footer {
         width: 90%;
     }
 
-    article {
+    article, #menu__note {
         padding: 2em 2em 2em 2em;
     }
 
@@ -418,6 +418,9 @@ footer {
         line-height: 1.5em;
     }
 
+    .plat {
+        width: 100%;
+    }
 
     .prix {
         margin-top: 0.25em;
