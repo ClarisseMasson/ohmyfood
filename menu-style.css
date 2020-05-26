@@ -11,8 +11,8 @@
 }
 
 @font-face {
-    font-family: 'Segoe Print';
-    src: url('font/segeopr.ttf') format('truetype');
+    font-family: 'Segoe';
+    src: url('font/segoepr.ttf') format('truetype');
 }
 
 h1 {
@@ -118,7 +118,7 @@ section {
 #menu__note {
     background-color: #fcdfdb;
     color: #3b1419;
-    font-family: 'Segoe Print';
+    font-family: 'Segoe';
 }
 
 #menu__note h1 {
@@ -228,7 +228,7 @@ section {
 #menu__papilles {
     background-color: #f8f9fa;
     color: black;
-    font-family: 'Segoe Print';
+    font-family: 'Segoe';
     letter-spacing:-0.08em;
 }
 
@@ -279,7 +279,7 @@ section {
 #menu__palette {
     background-color: #fdfffd;
     color: black;
-    font-family: 'Segoe Print';
+    font-family: 'Segoe';
     letter-spacing: -0.1em;
 }
 #menu__palette h1 {
