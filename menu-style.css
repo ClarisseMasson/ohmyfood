@@ -10,6 +10,11 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Segoe Print';
+    src: url('font/segeopr.ttf') format('truetype');
+}
+
 h1 {
     font-size: 3em;
     font-weight: normal;
@@ -353,8 +358,7 @@ footer {
     }
 
     h1, h2 {
-        text-align:center;
-
+        text-align: center;
     }
 
     article a {
@@ -374,6 +378,7 @@ footer {
         font-size: 1.2em;
         letter-spacing: -0.05em;
     }
+
     footer {
         height: 6em;
     }
@@ -391,8 +396,7 @@ footer {
     #menu__chic .plat {
         font-size: 0.9em;
     }
-
-
+}
 
 /*
     +------------------+
@@ -480,9 +484,9 @@ footer {
         font-size: 2em;
     }
 
-        #menu__note-signature i {
-            font-size: 1em;
-        }
+    #menu__note-signature i {
+        font-size: 1em;
+    }
 
     /*
     +-------------------------------+
