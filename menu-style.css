@@ -344,7 +344,7 @@ footer {
     }
 
     article {
-        padding: 3em 2.5em 3em 2.5em;
+        padding: 3em 3em 3em 3em;
     }
 
     header img {
@@ -365,8 +365,9 @@ footer {
     }
 
     .plat {
-        font-size: 0.9em;
-        letter-spacing: -0.05em;
+        font-size: 0.85em;
+        letter-spacing: -0.08em;
+        margin-right: 0.1em;
     }
 
     .prix {
@@ -387,7 +388,9 @@ footer {
         letter-spacing: -0.02em;
     }
 
-}
+    #menu__chic .plat {
+        font-size: 0.9em;
+    }
 
 
 
