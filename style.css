@@ -19,6 +19,15 @@ h3 {
     font-size: 2em;
 }
 
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.8em;
+    letter-spacing: 0.1em;
+    color: #ffce44;
+    margin-right:0.5em;
+}
+
 header {
     display: flex;
     background-color: #579c87;
@@ -27,9 +36,14 @@ header {
     align-content: center;
 }
 
+header a {
+    width:15%;
+    margin:1%;
+}
+
+
 header img{
-    width: 15%;
-    margin: 1%;
+    width: 100%;
  }
 
 main {
@@ -65,7 +79,7 @@ article a {
 #menu__note i {
     font-size: 3.5em;
     margin-bottom: 0.2em;
-    background: linear-gradient(to right, #f15961 50%, #f8a184 55%);
+    background: linear-gradient(to right, #f15961 40%, #f8a184 65%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -149,17 +163,23 @@ article a {
 }
 
 #prochainement {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
     background-color: #579c87;
-    border-radius: 0.35em;
+    border-radius: 0.8em;
     width: 20%;
-    margin: 2em 0em 4em;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    font-size: 1.8em;
-    letter-spacing: 0.1em;
-    color: #ffce44;
-    padding: 0.5em;
-    text-align: center;
+    margin: 2em 0em 7em 0em;
+    padding: 1em 1em 1em 1em;
+}
+
+.point {
+    height: 10px;
+    width: 10px;
+    background-color: #ffce44;
+    border-radius: 3em;
+    margin: 0.5em;
 }
 
 footer a{
@@ -197,7 +217,7 @@ footer {
         width: 90%;
     }
 
-    header img{
+    header a{
         width: 40%;
         margin: 3%;
     }
@@ -210,15 +230,19 @@ footer {
     }
 
     #prochainement{
-        width: 45%;
+        width: 40%;
         margin: 1em;
-        margin-bottom: 4em;
+        margin-top: 2em;
+        margin-bottom: 7em;
     }
 
     footer {
         height: 6em;
     }
 
+    h4{
+        font-size:2em;
+    }
 
  }
 
@@ -227,7 +251,7 @@ footer {
         width: 90%;
     }
 
-    header img {
+    header a {
         width: 70%;
         margin: 5%;
     }
@@ -239,11 +263,14 @@ footer {
         font-size: 0.85em;
     }
 
-    #prochainement {
-        width: 70%;
-        margin-top: 8%;
-        margin-bottom:4.5em;
+    h4 {
         font-size: 1.5em;
+    }
+
+    #prochainement {
+        width: 80%;
+        margin-top: 8%;
+        margin-bottom: 6em;
     }
 
 

@@ -25,6 +25,7 @@ h2 {
     font-size: 1.6em;
     text-align: center;
     line-height: 1.3em;
+    position: relative;
 }
 
 h3 {
@@ -45,9 +46,13 @@ header {
     align-content: center;
 }
 
-header img {
+header a {
     width: 15%;
     margin: 1%;
+}
+
+header img {
+    width: 100%;
 }
 
 
@@ -352,7 +357,7 @@ footer {
         padding: 3em 3em 3em 3em;
     }
 
-    header img {
+    header a {
         width: 40%;
         margin: 3%;
     }
@@ -415,7 +420,7 @@ footer {
     }
 
 
-    header img {
+    header a {
         width: 70%;
         margin: 5%;
     }

@@ -7,41 +7,53 @@
     <link rel="icon" type="image/png" href="img/icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="anim.css">
     <link href="https://fonts.googleapis.com/css?family=Devonshire|DM+Serif+Text|Great+Vibes|Kaushan+Script|Open+Sans&display=swap" rel="stylesheet">
     <link href="fontawesome-free-5.12.1-web/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img src="img/logo.svg" alt="logo" />
+        <a href="index.html"><img src="img/logo.svg" alt="logo" /></a>
     </header>
     <main>
         <article id="menu">
             <a href="menu_note.html" id="menu__note">
-                 <i class="fas fa-music"></i>
+                <div class="zoom">
+                    <i class="fas fa-music"></i>
                     <h3>La note enchantée</h3>
                     <h2>Menu</h2>
+                </div>
             </a>
             <a href="menu_chic.html" id="menu__chic">
-                <h3>Le chic à la française</h3>
-                <h2>Menu</h2>
+                <div class="zoom">
+                    <h3>Le chic à la française</h3>
+                    <h2>Menu</h2>
+               </div>
             </a>
             <a href="menu_papilles.html" id="menu__papilles">
-                <h3>Le délice des papilles</h3>
-                <h2>Menu</h2>
+                <div class="zoom">
+                    <h3>Le délice des papilles</h3>
+                    <h2>Menu</h2>
+                </div>
             </a>
             <a href="menu_palette.html" id="menu__palette">
-                <h3>La palette a du goût</h3>
-                <h2>Menu</h2>
+                <div class="zoom">
+                    <h3>La palette a du goût</h3>
+                    <h2>Menu</h2>
+                </div>
             </a>
         </article>
         <article id="prochainement">
             <h4>Prochainement</h4>
+            <div class="point"></div>
+            <div class="point"></div>
+            <div class="point"></div>
         </article>
     </main>
     <footer>
         <div id="annexe">
             <div id="annexe__mention">
-                <a href="mention.html">Mentions légales</a>
+                <a href="mention.html" target="_blank">Mentions légales</a>
             </div>
             <div id="annexe__contact">
                 <a href="mailto:adresse_bidont@outlook.com">Contactez-nous</a>
