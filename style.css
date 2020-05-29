@@ -264,7 +264,10 @@ footer {
     }
 
     h4 {
+        text-align:center;
+        width: 100%;
         font-size: 1.5em;
+
     }
 
     #prochainement {
