@@ -81,7 +81,7 @@ footer a {
     font-weight: bold;
     font-size: 1.5em;
     text-decoration: none;
-    letter-spacing: 0.1em;
+    letter-spacing: .1em;
     color: #ffce44;
 }
 
@@ -118,12 +118,12 @@ footer {
     }
 
     header a {
-    width: 40%;
-    margin: 3%;
+        width: 35%;
+        margin: 2%;
     }
 
     footer {
-        height: 6em;
+        height: 5.4em;
     }
 }
 
@@ -145,7 +145,7 @@ footer {
 
 
     header a {
-        width: 70%;
+        width: 65%;
         margin: 5%;
     }
 

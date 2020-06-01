@@ -319,6 +319,7 @@ footer a {
     font-weight: bold;
     font-size: 1.5em;
     text-decoration: none;
+    letter-spacing: .1em;
     color: #ffce44;
 }
 
@@ -372,8 +373,8 @@ footer {
     }
 
     .plat {
-        font-size: 0.75em;
-        letter-spacing: -0.08em;
+        font-size: 0.8em;
+        letter-spacing: -0.1em;
         margin-right: 0.1em;
     }
 
@@ -393,11 +394,11 @@ footer {
     +----------------+
 */
     #menu__chic .plat, #menu__chic .prix {
-        letter-spacing: -0.02em;
+        letter-spacing: -0.1em;
     }
 
     #menu__chic .plat {
-        font-size: 0.85em;
+        font-size: 0.75em;
     }
 }
 
@@ -419,7 +420,7 @@ footer {
 
 
     header a {
-        width: 70%;
+        width: 65%;
         margin: 5%;
     }
 

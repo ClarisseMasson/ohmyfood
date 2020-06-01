@@ -182,12 +182,12 @@ article a {
     margin: 0.5em;
 }
 
-footer a{
+footer a {
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     font-size: 1.5em;
     text-decoration: none;
-    letter-spacing: 0.1em;
+    letter-spacing: .1em;
     color: #ffce44;
 }
 
@@ -217,9 +217,9 @@ footer {
         width: 90%;
     }
 
-    header a{
-        width: 40%;
-        margin: 3%;
+    header a {
+        width: 35%;
+        margin: 2%;
     }
 
     article a {
@@ -237,7 +237,7 @@ footer {
     }
 
     footer {
-        height: 6em;
+        height: 5.4em;
     }
 
     h4{
@@ -252,14 +252,14 @@ footer {
     }
 
     header a {
-        width: 70%;
+        width: 65%;
         margin: 5%;
     }
 
     article a {
         width: 100%;
         margin-top: 8%;
-        height: 450px;
+        height: 520px;
         font-size: 0.85em;
     }
 
