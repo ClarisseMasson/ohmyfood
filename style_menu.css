@@ -394,7 +394,7 @@ footer {
     +----------------+
 */
     #menu__chic .plat, #menu__chic .prix {
-        letter-spacing: -0.1em;
+        letter-spacing: -0.05em;
     }
 
     #menu__chic .plat {
