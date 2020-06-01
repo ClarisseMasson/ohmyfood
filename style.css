@@ -21,7 +21,6 @@ h3 {
 
 h4 {
     font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
     font-size: 1.8em;
     letter-spacing: 0.1em;
     color: #ffce44;
@@ -187,7 +186,7 @@ footer a {
     font-weight: bold;
     font-size: 1.5em;
     text-decoration: none;
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
     color: #ffce44;
 }
 
@@ -218,7 +217,7 @@ footer {
     }
 
     header a {
-        width: 35%;
+        width: 38%;
         margin: 2%;
     }
 
@@ -237,7 +236,7 @@ footer {
     }
 
     footer {
-        height: 5.4em;
+        height: 5.2em;
     }
 
     h4{

@@ -33,9 +33,9 @@ h3 {
 }
 
 /*
-    +-------------------------+
-    | Bandeau_fixe_bas_commun |
-    +-------------------------+
+    +--------------------------+
+    | Bandeau_fixe_haut_commun |
+    +--------------------------+
 */
 
 header {
@@ -319,7 +319,7 @@ footer a {
     font-weight: bold;
     font-size: 1.5em;
     text-decoration: none;
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
     color: #ffce44;
 }
 
@@ -358,7 +358,7 @@ footer {
     }
 
     header a {
-        width: 35%;
+        width: 38%;
         margin: 2%;
     }
 
