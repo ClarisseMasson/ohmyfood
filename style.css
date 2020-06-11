@@ -11,15 +11,17 @@
 }
 
 
+h1 {
+    font-size: 2em;
+}
+
 h2 {
     font-size: 2.2em;
 }
 
-h3 {
-    font-size: 2em;
-}
 
-h4 {
+
+h3 {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.8em;
     letter-spacing: 0.1em;
@@ -92,7 +94,7 @@ article a {
 
 }
 
-#menu__note h3 {
+#menu__note h1 {
     font-family: 'Devonshire', cursive;
     font-weight: 400;
     font-size: 2.5em;
@@ -112,7 +114,7 @@ article a {
     line-height: 1.5em;
 }
 
-#menu__chic h3 {
+#menu__chic h1 {
     background: linear-gradient(45deg, #c77529 30%, #b67094 40%, #7762ab 80% );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -132,7 +134,7 @@ article a {
     line-height: 1.5em;
 }
 
-#menu__papilles h3 {
+#menu__papilles h1 {
     background: linear-gradient(45deg, #3951a3 30%, #437ec1 80% );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -153,7 +155,7 @@ article a {
     line-height: 1.5em;
 }
 
-#menu__palette h3 {
+#menu__palette h1 {
     background: linear-gradient(45deg, #3c9444 30%, #c2db77 80% );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -239,7 +241,7 @@ footer {
         height: 5.2em;
     }
 
-    h4{
+    h3{
         font-size:2em;
     }
 
@@ -262,7 +264,7 @@ footer {
         font-size: 0.85em;
     }
 
-    h4 {
+    h3 {
         text-align:center;
         width: 100%;
         font-size: 1.5em;
