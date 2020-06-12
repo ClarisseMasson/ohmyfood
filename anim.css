@@ -1,7 +1,7 @@
 /*
-    +-----------------------------------+
-    | Agrandisssement_opacite_h2&3_menu |
-    +-----------------------------------+
+    +-------------------------------------+
+    | Agrandisssement_+_opacite_h2&3_menu |
+    +-------------------------------------+
 */
 
 .zoom:hover {
@@ -11,7 +11,7 @@
     opacity: 1;
 }
 
-
+/*J"agrandis puis remet à l'état initial et rend légérement transparent*/
 @-webkit-keyframes grandit {
     0% {
         -webkit-transform: scale(1);
@@ -36,32 +36,26 @@
     +--------------------+
 */
 
-
+/*Je fais tourner alternativement mon lien pour créer l'effet wiggles*/
  @-webkit-keyframes wiggle {
-        0% {
+    0% {
         -webkit-transform: rotate(2deg);
-        transform-origin:center;
-        
     }
 
     35% {
         -webkit-transform: rotate(0deg);
-        transform-origin: center;
     }
 
     65% {
         -webkit-transform: rotate(-2deg);
-        transform-origin: center;
     }
 
     100% {
         -webkit-transform: rotate(0deg);
-        transform-origin: center;
     }
-
-
 }
 
+/*Je le fais se répeter plusieurs fois*/
 footer a:hover {
     display: block;
     -webkit-animation: wiggle 0.15s;
@@ -75,7 +69,7 @@ footer a:hover {
     +----------------------+
 */
 
-
+/*Animaton pour faire disparaitre le point*/
 @-webkit-keyframes point {
     0% {
         opacity: 1;
@@ -86,15 +80,18 @@ footer a:hover {
     }
 }
 
+/*Je le fais se répeter à l'infini + forwards pour l'état initial sur l'ensemble des points*/
 .point {
     -webkit-animation: point 1.2s infinite ease-in-out;
     -webkit-animation-fill-mode:forwards;
 }
 
+/*Le deuxième point commence après l'animation du premier soit .4s ou 1.2/3*/
 .point:nth-of-type(2) {
     -webkit-animation-delay: .4s;
 }
 
+/*Le troisième ou dernier point commence après l'animation du premier et du second soit .8s*/
 .point:last-of-type {
     -webkit-animation-delay: .8s;
 }
@@ -106,7 +103,8 @@ footer a:hover {
     +------------------------+
 */
 
-
+/*Je n'oublie pas de générer un content, lui mettre une position absolu et le caler sur mon élément*/
+/*Je redéfinie son point d'origine à gauche*/
 .menu__partie-titre h3::after {
     content: "";
     position: absolute;
@@ -120,6 +118,7 @@ footer a:hover {
     transform-origin: left;
 }
 
+/*Je fais apparaitre la ligne*/
 .menu__partie-titre h3:hover::after {
     opacity: 1;
     transform: scaleX(1);

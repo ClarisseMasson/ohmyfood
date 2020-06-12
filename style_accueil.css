@@ -1,4 +1,10 @@
-﻿
+﻿/*
+    +-----------------+
+    | GENERAL_ACCUEIL |
+    +-----------------+
+*/
+
+
 * {
     padding: 0px;
     margin: 0px;
@@ -10,16 +16,14 @@
     src: url('font/segoepr.ttf') format('truetype');
 }
 
-
 h1 {
     font-size: 2em;
 }
 
 h2 {
+    font-family: 'Segoe';
     font-size: 2.2em;
 }
-
-
 
 h3 {
     font-family: 'Open Sans', sans-serif;
@@ -29,29 +33,20 @@ h3 {
     margin-right:0.5em;
 }
 
-header {
-    display: flex;
-    background-color: #579c87;
-    width: 100%;
-    justify-content: center;
-    align-content: center;
-}
-
-header a {
-    width:15%;
-    margin:1%;
-}
-
-
-header img{
-    width: 100%;
- }
-
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+
+/*
+    +--------------+
+    | MENUS_commun |
+    +--------------+
+*/
+
+
 article {
     display: flex;
     flex-wrap: wrap;
@@ -61,20 +56,28 @@ article {
 }
 
 article a {
-        text-decoration: none;
-        display: flex;
-        flex-direction: column;
-        width: 47%;
-        margin-top: 3em;
-        height: 700px;
-        text-align: center;
-        justify-content: center;
-    }
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+    margin-top: 3em;
+    height: 700px;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0em 0em 0.5em 0em rgba(0, 0, 0, 0.35);
+}
+
+
+/*
+    +-----------------------+
+    | MENUS_specifique_note |
+    +-----------------------+
+*/
+
 
 #menu__note {
     background-color: #fcdfdb;
     color: #3b1419;
-    box-shadow: 0em 0em 0.5em 0em rgba(0, 0, 0, 0.35);
 }
 
 #menu__note i {
@@ -86,7 +89,6 @@ article a {
 }
 
 #menu__note h2 {
-    font-family: 'Segoe';
     font-weight: bolder;
     text-transform: uppercase;
     letter-spacing: -0.05em;
@@ -102,9 +104,16 @@ article a {
 
 }
 
+
+/*
+    +-----------------------+
+    | MENUS_specifique_chic |
+    +-----------------------+
+*/
+
+
 #menu__chic {
     background-color: #fef5f9;
-    box-shadow: 0em 0em 0.5em 0em rgba(0, 0, 0, 0.35);
 }
 
 #menu__chic h2 {
@@ -122,14 +131,20 @@ article a {
     font-weight:initial;
 }
 
+
+/*
+    +---------------------------+
+    | MENUS_specifique_papilles |
+    +---------------------------+
+*/
+
+
 #menu__papilles {
     background-color: #f8f9fa;
-    box-shadow: 0em 0em 0.5em 0em rgba(0, 0, 0, 0.35);
 }
 
 #menu__papilles h2 {
     color: #437ec1;
-    font-family: 'Segoe';
     line-height: 0.9em;
     line-height: 1.5em;
 }
@@ -143,14 +158,18 @@ article a {
     letter-spacing:0.07em;
 }
 
+/*
+    +---------------------------+
+    | MENUS_specifique_palettes |
+    +---------------------------+
+*/
+
 #menu__palette {
     background-color: #fdfffd;
-    box-shadow: 0em 0em 0.5em 0em rgba(0, 0, 0, 0.35);
 }
 
 #menu__palette h2 {
     color: #73c058;
-    font-family: 'Segoe';
     line-height: 0.9em;
     line-height: 1.5em;
 }
@@ -162,6 +181,12 @@ article a {
     font-family: 'Kaushan Script', cursive;
     letter-spacing: 0.07em;
 }
+
+/*
+    +---------------+
+    | PROCHAINEMENT |
+    +---------------+
+*/
 
 #prochainement {
     display: flex;
@@ -183,44 +208,17 @@ article a {
     margin: 0.5em;
 }
 
-footer a {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    font-size: 1.5em;
-    text-decoration: none;
-    letter-spacing: 0.1em;
-    color: #ffce44;
-}
 
-
-footer {
-    position: fixed;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    height: 5em;
-    width: 100%;
-    background-color: #579c87;
-}
-
-#annexe {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
+/*
+    +---------------------+
+    | RESPONSIVE_Tablette |
+    +---------------------+
+*/
 
 
 @media screen and (min-width: 767px) and (max-width : 1367px) {
-    article, #annexe{
+    article {
         width: 90%;
-    }
-
-    header a {
-        width: 38%;
-        margin: 2%;
     }
 
     article a {
@@ -230,31 +228,30 @@ footer {
         margin-top: 4%;
     }
 
-    #prochainement{
+    #prochainement {
         width: 40%;
         margin: 1em;
         margin-top: 2em;
         margin-bottom: 7em;
     }
 
-    footer {
-        height: 5.2em;
-    }
-
-    h3{
+    h3 {
         font-size:2em;
     }
 
  }
 
-@media screen and (max-width: 767px) {
-    article, #annexe {
-        width: 90%;
-    }
 
-    header a {
-        width: 65%;
-        margin: 5%;
+/*
+    +-----------------------+
+    | RESPONSIVE_smartphone |
+    +-----------------------+
+*/
+
+
+@media screen and (max-width: 767px) {
+    article {
+        width: 90%;
     }
 
     article a {
@@ -276,20 +273,6 @@ footer {
         margin-top: 8%;
         margin-bottom: 6em;
     }
-
-
-    footer{
-        font-size: 0.85em;
-        height: 6em;
-        align-items:center;
-    }
-
-    #annexe{
-        flex-direction: column;
-        justify-content: space-between;
-        height:70%;
-    }
-
 }
 
 

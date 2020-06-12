@@ -1,10 +1,16 @@
+/*
+    +---------+
+    | GENERAL |
+    +---------+
+*/
+
+
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     font-family: 'Open Sans';
 }
-
 
 h1 {
     font-size:2.2em;
@@ -25,22 +31,12 @@ p {
     text-align: left;
 }
 
-header {
-    display: flex;
-    background-color: #579c87;
-    width: 100%;
-    justify-content: center;
-    align-content: center;
-}
 
-header a {
-    width: 15%;
-    margin: 1%;
-}
-
-header img {
-    width: 100%;
-}
+/*
+    +-------------------+
+    | CONTENU_principal |
+    +-------------------+
+*/
 
 
 main {
@@ -76,89 +72,40 @@ article a {
 }
 
 
-footer a {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    font-size: 1.5em;
-    text-decoration: none;
-    letter-spacing: 0.1em;
-    color: #ffce44;
-}
-
-
-footer {
-    position: fixed;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    height: 5em;
-    width: 100%;
-    background-color: #579c87;
-}
-
-#annexe {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
+/*
+    +---------------------+
+    | RESPONSIVE_Tablette |
+    +---------------------+
+*/
 
 
 @media screen and (min-width: 767px) and (max-width : 1367px) {
+    
     article {
         width: 90%;
         margin-top: 3%;
         margin-bottom: 12%;
     }
-
-    #annexe {
-        width: 90%;
-    }
-
-    header a {
-        width: 38%;
-        margin: 2%;
-    }
-
-    footer {
-        height: 5.2em;
-    }
 }
 
+
+/*
+    +-----------------------+
+    | RESPONSIVE_smartphone |
+    +-----------------------+
+*/
+
+
 @media screen and (max-width: 767px) {
+    
     article {
         width: 90%;
         margin-top:6%;
         margin-bottom: 28%;
         padding:1em;
     }
-
-    #annexe {
-        width: 90%;
-    }
-    
+       
     article img {
         width: 60%;
     }
-
-
-    header a {
-        width: 65%;
-        margin: 5%;
-    }
-
-
-    footer {
-        font-size: 0.85em;
-        height: 6em;
-        align-items: center;
-    }
-
-    #annexe {
-        flex-direction: column;
-        justify-content: space-between;
-        height: 70%;
-    }
-}
+ }
