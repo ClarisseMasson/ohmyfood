@@ -50,11 +50,9 @@ article {
     flex-wrap: wrap;
     width: 60%;
     background-color: #fdfffd;
-    justify-content: space-between;
-    align-content: space-between;
     margin: 2%;
-    margin-bottom:6%;
-    padding:2em;
+    margin-bottom: 6%;
+    padding: 2em;
     box-shadow: 0em 0em 0.5em 0em rgba(0, 0, 0, 0.35);
 }
 

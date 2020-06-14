@@ -27,12 +27,12 @@ header a {
 
 
 footer {
+    width: 100%;
     position: fixed;
     bottom: 0;
     display: flex;
     justify-content: center;
     height: 5em;
-    width: 100%;
     background-color: #579c87;
 }
 
@@ -86,6 +86,7 @@ footer a {
 
 @media screen and (max-width: 767px) {
 
+    /*on passe mentions légales et contactez- nous en mode colonne pour plus de lisibilié*/
     #annexe {
         width: 90%;
         flex-direction: column;

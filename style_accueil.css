@@ -30,7 +30,6 @@ h3 {
     font-size: 1.8em;
     letter-spacing: 0.1em;
     color: #ffce44;
-    margin-right:0.5em;
 }
 
 main {
@@ -47,23 +46,22 @@ main {
 */
 
 
-article {
+section {
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
     justify-content: space-between;
-    align-content: space-between;
 }
 
-article a {
-    text-decoration: none;
+section a {
+    width: 47%;
+    height: 700px;
     display: flex;
     flex-direction: column;
-    width: 47%;
-    margin-top: 3em;
-    height: 700px;
-    text-align: center;
     justify-content: center;
+    margin-top: 3em;
+    text-decoration: none;
+    text-align: center;
     box-shadow: 0em 0em 0.5em 0em rgba(0, 0, 0, 0.35);
 }
 
@@ -88,20 +86,18 @@ article a {
     -webkit-text-fill-color: transparent;
 }
 
+#menu__note h1 {
+    font-family: 'Devonshire', cursive;
+    font-weight: 400;
+    font-size: 2.5em;
+    letter-spacing: 0.01em;
+}
+
 #menu__note h2 {
     font-weight: bolder;
     text-transform: uppercase;
     letter-spacing: -0.05em;
     line-height: 0.9em;
-
-}
-
-#menu__note h1 {
-    font-family: 'Devonshire', cursive;
-    font-weight: 400;
-    font-size: 2.5em;
-    letter-spacing:0.01em;
-
 }
 
 
@@ -116,19 +112,19 @@ article a {
     background-color: #fef5f9;
 }
 
-#menu__chic h2 {
-    color: #c77529;
-    font-family: 'Times New Roman';
-    font-weight: bolder;
-    line-height: 1.5em;
-}
-
 #menu__chic h1 {
     background: linear-gradient(45deg, #c77529 30%, #b67094 40%, #7762ab 80% );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'DM Serif Text', serif;
-    font-weight:initial;
+    font-weight: initial;
+}
+
+#menu__chic h2 {
+    color: #c77529;
+    font-family: 'Times New Roman';
+    font-weight: bolder;
+    line-height: 1.5em;
 }
 
 
@@ -143,20 +139,20 @@ article a {
     background-color: #f8f9fa;
 }
 
-#menu__papilles h2 {
-    color: #437ec1;
-    line-height: 0.9em;
-    line-height: 1.5em;
-}
-
 #menu__papilles h1 {
     background: linear-gradient(45deg, #3951a3 30%, #437ec1 80% );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Great Vibes', cursive;
-    font-size:2.5em;
-    letter-spacing:0.07em;
+    font-size: 2.5em;
+    letter-spacing: 0.07em;
 }
+
+#menu__papilles h2 {
+    color: #437ec1;
+    line-height: 1.5em;
+}
+
 
 /*
     +---------------------------+
@@ -164,14 +160,9 @@ article a {
     +---------------------------+
 */
 
+
 #menu__palette {
     background-color: #fdfffd;
-}
-
-#menu__palette h2 {
-    color: #73c058;
-    line-height: 0.9em;
-    line-height: 1.5em;
 }
 
 #menu__palette h1 {
@@ -182,30 +173,42 @@ article a {
     letter-spacing: 0.07em;
 }
 
+#menu__palette h2 {
+    color: #73c058;
+    line-height: 1.5em;
+}
+
+
 /*
     +---------------+
     | PROCHAINEMENT |
     +---------------+
 */
 
+
 #prochainement {
+    width: 20%;
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    justify-content: center;
+    justify-content: space-around;
     background-color: #579c87;
     border-radius: 0.8em;
-    width: 20%;
     margin: 2em 0em 7em 0em;
-    padding: 1em 1em 1em 1em;
+    padding: 1em;
+}
+
+#trois-points {
+    display: flex;
+    flex-direction: row;
 }
 
 .point {
-    height: 10px;
     width: 10px;
-    background-color: #ffce44;
+    height: 10px;
     border-radius: 3em;
     margin: 0.5em;
+    background-color: #ffce44;
 }
 
 
@@ -217,15 +220,16 @@ article a {
 
 
 @media screen and (min-width: 767px) and (max-width : 1367px) {
-    article {
+    
+    section {
         width: 90%;
     }
 
-    article a {
+    section a {
         width: 47%;
         height: 550px;
         font-size: 0.85em;
-        margin-top: 4%;
+        margin-top: 2.5em;
     }
 
     #prochainement {
@@ -236,9 +240,8 @@ article a {
     }
 
     h3 {
-        font-size:2em;
+        font-size: 2em;
     }
-
  }
 
 
@@ -250,22 +253,21 @@ article a {
 
 
 @media screen and (max-width: 767px) {
-    article {
+    
+    section {
         width: 90%;
     }
 
-    article a {
+     /*on passe les menus à 100% pour plus de lisibilié*/
+    section a {
         width: 100%;
-        margin-top: 8%;
         height: 520px;
+        margin-top: 8%;
         font-size: 0.85em;
     }
 
     h3 {
-        text-align:center;
-        width: 100%;
         font-size: 1.5em;
-
     }
 
     #prochainement {

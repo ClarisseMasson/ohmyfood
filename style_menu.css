@@ -32,6 +32,7 @@ h3 {
     font-size: 1.6em;
     text-align: center;
     line-height: 1.3em;
+    /*pour le surlignage en animation*/
     position: relative;
 }
 
@@ -40,9 +41,9 @@ h4 {
 }
 
 main {
-    display:flex;
-    flex-direction:column;
-    align-items:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -52,22 +53,16 @@ main {
     +-----------------------+
 */
 
-main {
-    display: flex;
-    justify-content: center;
-}
-
 article {
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 50%;
-    justify-content: space-between;
-    align-items:center;
+    align-items: center;
     box-shadow: 0em 0em 0.5em 0em rgba(0, 0, 0, 0.35);
     margin-top: 2em;
     margin-bottom: 8em;
-    padding:5em 4em 5em 4em;
+    padding: 5em 4em 5em 4em;
 }
 
 section {
@@ -83,7 +78,6 @@ section {
 
 .menu__partie-titre img {
     width:28%;
-    height:100%;
 }
 
 .menu__partie-description {
@@ -176,8 +170,8 @@ section {
     background-color: #fef5f9;
     color: black;
     font-family: 'Times New Roman';
+    padding-bottom: 8%;
 }
-
 
 #menu__chic h2 {
     background: linear-gradient(45deg, #c77529 30%, #b67094 40%, #7762ab 80% );
@@ -192,9 +186,13 @@ section {
     font-size: 1.3em;
 }
 
+/*Je fais un miroir sur mon trait pour n'avoir qu'un png*/ 
 #menu__chic img:nth-of-type(2) {
     transform: scaleX(-1);
 }
+
+ /*je change les couleurs des traits avec un filtre,
+calculateur : https://codepen.io/sosuke/pen/Pjoqqp */
 
 #menu__chic .menu__partie:first-of-type {
     /*color: #c77529;*/
@@ -209,7 +207,6 @@ section {
 #menu__chic .menu__partie:nth-of-type(3) {
     /*color: #7762ab;*/
     filter: invert(43%) sepia(8%) saturate(2840%) hue-rotate(216deg) brightness(95%) contrast(90%);
-    margin-bottom:16%;
 }
 
 
@@ -312,7 +309,7 @@ section {
     }
 
     article {
-        padding: 3em 3em 3em 3em;
+        padding: 3em;
     }
 
     h2, h3 {
@@ -366,7 +363,7 @@ section {
     }
 
     article, #menu__note {
-        padding: 2em 2em 2em 2em;
+        padding: 2em;
     }
 
     h1 {
