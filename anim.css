@@ -104,7 +104,8 @@ footer a:hover {
     +------------------------+
 */
 
-/*Je n'oublie pas de générer un content, lui mettre une position absolu et le caler sur mon élément*/
+/*Je n'oublie pas de générer un content, lui mettre une position absolu
+et le caler sur mon élément*/
 /*Je redéfinie son point d'origine à gauche*/
 .menu__partie-titre h3::after {
     content: "";
