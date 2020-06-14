@@ -32,19 +32,19 @@ h3 {
     color: #ffce44;
 }
 
+
+/*
+    +------------------+
+    | STRUCTURE_commun |
+    +------------------+
+*/
+
+
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-
-/*
-    +--------------+
-    | MENUS_commun |
-    +--------------+
-*/
-
 
 section {
     width: 50%;
