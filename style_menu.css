@@ -191,7 +191,7 @@ section {
     transform: scaleX(-1);
 }
 
- /*je change les couleurs des traits avec un filtre,
+ /*je change les couleurs des parties avec un filtre,
 calculateur : https://codepen.io/sosuke/pen/Pjoqqp */
 
 #menu__chic .menu__partie:first-of-type {
