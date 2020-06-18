@@ -5,10 +5,8 @@
 */
 
 .zoom:hover {
-    -webkit-transform: scale(1);
     -webkit-animation: grandit 0.8s ease-in-out forwards;
     -webkit-animation-delay: 150ms;
-    opacity: 1;
 }
 
 /*J"agrandis puis remet à l'état initial et rend légérement transparent*/

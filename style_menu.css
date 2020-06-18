@@ -303,23 +303,10 @@ calculateur : https://codepen.io/sosuke/pen/Pjoqqp */
 
 
 @media screen and (min-width: 767px) and (max-width : 1367px) {
-    
+
     article {
         width: 90%;
-    }
-
-    article {
         padding: 3em;
-    }
-
-    h2, h3 {
-        text-align: center;
-    }
-
-    article a {
-        width: 47%;
-        height: 550px;
-        margin-top: 4%;
     }
 
     .plat {
@@ -360,9 +347,6 @@ calculateur : https://codepen.io/sosuke/pen/Pjoqqp */
 
     article {
         width: 90%;
-    }
-
-    article, #menu__note {
         padding: 2em;
     }
 
@@ -386,8 +370,8 @@ calculateur : https://codepen.io/sosuke/pen/Pjoqqp */
     
     .menu__partie-description {
         margin-bottom: 10%;
-        margin-left: 0%;
-        margin-right: 0%;
+        margin-left: 0;
+        margin-right: 0;
         line-height: 1.5em;
     }
 
